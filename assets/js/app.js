@@ -18,13 +18,15 @@ $("input[type = 'text']").keypress(function (event) {
 });
 
 $(".fa-plus").click(function () {
-    $("input[type='text']").fadeToggle();
-    $(".fa-plus").toggleClass("hidden");
-    $(".fa-minus").toggleClass("hidden");
+    iconSwitch();
 });
 
 $(".fa-minus").click(function () {
+    iconSwitch();
+});
+
+function iconSwitch () {
     $("input[type='text']").fadeToggle();
     $(".fa-plus").toggleClass("hidden");
     $(".fa-minus").toggleClass("hidden");
-});
+}
