@@ -79,6 +79,14 @@ input:focus {
     float: right;
 }
 
+.fa-minus {
+    float: right;
+}
+
+.hidden {
+    display: none;
+}
+
 .completed {
     color: gray;
     text-decoration: line-through;

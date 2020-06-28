@@ -17,6 +17,14 @@ $("input[type = 'text']").keypress(function (event) {
     }
 });
 
-$(".fa-plus").click(function() {
+$(".fa-plus").click(function () {
     $("input[type='text']").fadeToggle();
+    $(".fa-plus").toggleClass("hidden");
+    $(".fa-minus").toggleClass("hidden");
+});
+
+$(".fa-minus").click(function () {
+    $("input[type='text']").fadeToggle();
+    $(".fa-plus").toggleClass("hidden");
+    $(".fa-minus").toggleClass("hidden");
 });
